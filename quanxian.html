@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="css/bulma.css" rel="stylesheet" />
+		<link href="css/md.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/sada.css" />
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="nprogress-container"></div>
+			<section class="hero is-bold app-navbar animated slideInDown">
+				<div class="hero-head">
+					<nav style="min-height:110px" class="nav">
+						<a href="#" class="logo"></a>
+						<div class="nav-left">
+							<a href="#" class="nav-item is-brand"></a>
+							<div href="#" class="nav-item is-active">
+								<p class="subtitle">首页</p>
+							</div>
+							<a href="#" class="nav-item">
+								<p class="subtitle">房源管理</p>
+							</a>
+							<a href="#" class="nav-item">
+								<p class="subtitle">客源管理</p>
+							</a>
+							<a href="#" class="nav-item">
+								<p class="subtitle">业务动态</p>
+							</a>
+							<a href="#" class="nav-item">
+								<p class="subtitle">实用工具</p>
+							</a>
+							<a href="#" class="nav-item">
+								<p class="subtitle">合同服务</p>
+							</a>
+							<a href="#" class="nav-item">
+								<p class="subtitle">统计中心</p>
+							</a>
+							<a href="#" class="nav-item">
+								<p class="subtitle subtitle2">门店管理</p>
+							</a>
+						</div>
+						<div style="flex:0.5" class="nav-right nav-menu">
+							<p class="has-text-left"><strong>韩楷</strong><br /> <small>公司：中房盟</small> <br /> <small>部门：运营部</small> <br /> <small>职务：管理员</small> <br /></p>
+							<span class="nav-item"><a href="#" class="button is-danger is-inverted is-small exit-btn"><span>退出</span></a>
+							</span>
+						</div>
+					</nav>
+				</div>
+			</section>
+
+			<aside class="menu app-sidebar animated slideInLeft" style="width:212px;border-right:1px solid #f2f2f2;">
+				<ul class="menu-list menu-left">
+					<li class="active">
+						<a>
+							组织架构
+							<span class="icon is-small is-angle"><i class="fa fa-angle-right"></i></span></a>
+					</li>
+					<li>
+						<a>
+							城市字典
+							<span class="icon is-small is-angle"><i class="fa fa-angle-right"></i></span></a>
+					</li>
+					<li>
+						<a>
+							楼盘字典
+							<span class="icon is-small is-angle"><i class="fa fa-angle-right"></i></span></a>
+					</li>
+					<li>
+						<a>
+							管理选项
+							<span class="icon is-small is-angle"><i class="fa fa-angle-right"></i></span></a>
+					</li>
+				</ul>
+			</aside>
+			<!--<aside style="width:248px;left:213px" class="menu app-sidebar animated slideInLeft">
+      <div class="menu-self">
+        <div class="menu-top">上海市</div>
+        <ul class="menu-list menu-right">
+          <li><a><span class="icon is-small"><i class="fa fa-caret-down"></i></span>普陀区</a>
+            <ul class="menu-second menu-second2">
+              <li class="active"><a><span class="icon is-small"><i></i></span>北京路板块</a></li>
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-right"></i></span>徐汇区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-right"></i></span>长宁区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-right"></i></span>静安区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-right"></i></span>黄浦区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-right"></i></span>卢湾区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-right"></i></span>浦东新区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-right"></i></span>虹口区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-right"></i></span>杨浦区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-right"></i></span>闵行区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-right"></i></span>奉贤区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-right"></i></span>金山区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-right"></i></span>松江区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-right"></i></span>嘉定区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+          <li><a><span class="icon is-small"><i class="fa fa-caret-down"></i></span>宝山区</a>
+            <ul class="menu-second">
+              <li><a><span class="icon is-small"><i></i></span>长寿路板块</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </aside>-->
+
+			<div class="app-main">
+				<div class="container is-fluid is-marginless app-content">
+					<nav class="level app-levelbar">
+						<div class="level-left">
+							<div class="level-item">
+							</div>
+						</div>
+						<div class="level-right is-hidden-mobile"></div>
+					</nav>
+
+					<div class="animated down">
+						<div>
+							<div class="container is-fluid is-marginless app-content">
+
+								<div class="tile is-ancestor topfill">
+									<div class="tile is-parent">
+										<div class="tile is-child box">
+											<div class="control is-horizontal">
+												<!--<input type="text" class="input input-240" placeholder="请输入楼盘名称" />-->
+												<a class="button is-danger wl-btn is-outlined">查询</a>
+												<a class="button is-danger wl-btn is-outlined modal-button" data-target="#addFloor">新增楼盘</a>
+												<a class="button is-danger wl-btn is-outlined">查询</a>
+												<a class="button is-danger wl-btn is-outlined modal-button" data-target="#addFloor">新增楼盘</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="table-bod">
+									<div class="table-over">
+										<table class="table is-bordered is-striped table-self">
+											<thead>
+												<tr>
+													<th>板块</th>
+													<th>楼盘名称</th>
+													<th>用途</th>
+													<th>类型</th>
+													<th>建房</th>
+													<th>地址 </th>
+													<th>售均价 </th>
+													<th>操作</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>长寿路板块</td>
+													<td>幸福家园</td>
+													<td>住宅</td>
+													<td>高层</td>
+													<td>2000年</td>
+													<td>澳门路常德路</td>
+													<td>700万</td>
+													<td>
+														<a class="button is-danger is-outlined modal-button" data-target="#look">详情</a>
+														<a class="button is-danger is-outlined">修改</a>
+														<a class="button is-danger is-outlined modal-button" data-target="#deleteAlert">删除</a>
+													</td>
+												</tr>
+												<tr>
+													<td>长寿路板块</td>
+													<td>幸福家园</td>
+													<td>住宅</td>
+													<td>高层</td>
+													<td>2000年</td>
+													<td>澳门路常德路</td>
+													<td>700万</td>
+													<td>
+														<a class="button is-danger is-outlined modal-button" data-target="#look">详情</a>
+														<a class="button is-danger is-outlined">修改</a>
+														<a class="button is-danger is-outlined modal-button" data-target="#deleteAlert">删除</a>
+													</td>
+												</tr>
+												<tr>
+													<td>长寿路板块</td>
+													<td>幸福家园</td>
+													<td>住宅</td>
+													<td>高层</td>
+													<td>2000年</td>
+													<td>澳门路常德路</td>
+													<td>700万</td>
+													<td>
+														<a class="button is-danger is-outlined modal-button" data-target="#look">详情</a>
+														<a class="button is-danger is-outlined">修改</a>
+														<a class="button is-danger is-outlined modal-button" data-target="#deleteAlert">删除</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="page-border">
+										<ul class="page-self">
+											<li>
+												<a>
+													<<</a>
+											</li>
+											<li>
+												<a>
+													<</a>
+											</li>
+											<li class="active">
+												<a>1</a>
+											</li>
+											<li>
+												<a>2</a>
+											</li>
+											<li>
+												<a>3</a>
+											</li>
+											<li>
+												<a>4</a>
+											</li>
+											<li>
+												<a>5</a>
+											</li>
+											<li>
+												<a>></a>
+											</li>
+											<li>
+												<a>>></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="columns">
+									<div class="table-bod column">
+										<div class="table-over">
+											<table class="table is-bordered is-striped table-self1">
+												<thead>
+													<tr>
+														<th>板块</th>
+														<th>楼盘名称</th>
+														<th>操作</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>长寿路板块</td>
+														<td>幸福家园</td>
+														<td>
+															<a class="button is-danger is-outlined modal-button" data-target="#look">详情</a>
+															<a class="button is-danger is-outlined">修改</a>
+															<a class="button is-danger is-outlined modal-button" data-target="#deleteAlert">删除</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="page-border">
+											<ul class="page-self">
+												<li>
+													<a>
+														<<</a>
+												</li>
+												<li>
+													<a>
+														<</a>
+												</li>
+												<li class="active">
+													<a>1</a>
+												</li>
+												<li>
+													<a>2</a>
+												</li>
+												<li>
+													<a>3</a>
+												</li>
+												<li>
+													<a>4</a>
+												</li>
+												<li>
+													<a>5</a>
+												</li>
+												<li>
+													<a>></a>
+												</li>
+												<li>
+													<a>>></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="table-bod column">
+										<div class="table-over">
+											<table class="table is-bordered is-striped table-self1">
+												<thead>
+													<tr>
+														<th>板块</th>
+														<th>楼盘名称</th>
+														<th>操作</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>长寿路板块</td>
+														<td>幸福家园</td>
+														<td>
+															<a class="button is-danger is-outlined modal-button" data-target="#look">详情</a>
+															<a class="button is-danger is-outlined">修改</a>
+															<a class="button is-danger is-outlined modal-button" data-target="#deleteAlert">删除</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="page-border">
+											<ul class="page-self">
+												<li>
+													<a>
+														<<</a>
+												</li>
+												<li>
+													<a>
+														<</a>
+												</li>
+												<li class="active">
+													<a>1</a>
+												</li>
+												<li>
+													<a>2</a>
+												</li>
+												<li>
+													<a>3</a>
+												</li>
+												<li>
+													<a>4</a>
+												</li>
+												<li>
+													<a>5</a>
+												</li>
+												<li>
+													<a>></a>
+												</li>
+												<li>
+													<a>>></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+										
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!--新增房源弹框-->
+		<div class="modal" id="addFloor">
+			<div class="modal-background"></div>
+			<div class="modal-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title">新增楼盘</p>
+				</header>
+				<section class="modal-card-body">
+					<!-- Content ... -->
+					<div class="tabs-content" id="tabs-content" style="height:476px;">
+						<div class="tile is-ancestor my-tile" id="my-tile">
+							<div class="left-tile">
+								<div class="form-row">
+									<label class="formlabel"><i class="st"></i>
+所属区域：</label>
+									<div class="control-self">
+										<span class="sayspan">上海市</span>
+										<div class="select select3 is-fullwidth select-self" style="margin-right:15px;">
+											<select>
+												<option>普陀区</option>
+											</select>
+										</div>
+										<div class="select select3 is-fullwidth select-self" style="margin-right:15px;">
+											<select>
+												<option>长寿路板块</option>
+												<option>南京路板块</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<label class="formlabel"><i class="st"></i>楼盘名称：</label>
+									<div class="control-self">
+										<input type="text" class="input input-240" value="" />
+									</div>
+									<label class="formlabel formlabel2"><i class="st"></i>物业用途：</label>
+									<div class="control-self">
+										<div class="select select2 is-fullwidth select-self">
+											<select>
+												<option>租售</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<label class="formlabel">拼音缩写：</label>
+									<div class="control-self">
+										<input type="text" class="input input-240" value="" />
+									</div>
+									<label class="formlabel formlabel2"><i class="st"></i>物业类型：</label>
+									<div class="control-self">
+										<div class="select select2 is-fullwidth select-self">
+											<select>
+												<option>多层</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<label class="formlabel">别名：</label>
+									<div class="control-self">
+										<input type="text" class="input input-240" value="" />
+									</div>
+									<label class="formlabel formlabel2">建房/产权：</label>
+									<div class="control-self">
+										<div class="select select2 is-fullwidth select-self" style="width:85px;">
+											<select>
+												<option>多层</option>
+											</select>
+										</div>
+										<span class="formspan">/</span>
+										<div class="select select2 is-fullwidth select-self" style="width:85px;">
+											<select>
+												<option>多层</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="form-row">
+									<label class="formlabel"><i class="st"></i>概要地址：</label>
+									<input type="text" class="input input-480" value="" />
+								</div>
+								<div class="form-row">
+									<label class="formlabel">详细地址：</label>
+									<input type="text" class="input input-480" value="" />
+								</div>
+								<div class="form-row">
+									<label class="formlabel"><i class="st"></i>售均价：</label>
+									<div class="control-self">
+										<input type="text" class="input input-60" value="" style="width:80px;" />
+										<span class="formspan">元/平米</span>
+									</div>
+									<label class="formlabel formlabel2">物业公司：</label>
+									<input type="text" class="input input-240" value="" style="width:225px;" />
+								</div>
+								<div class="form-row">
+									<label class="formlabel">建筑面积：</label>
+									<div class="control-self">
+										<input type="text" class="input input-60" value="" style="width:80px;" />
+										<span class="formspan">元/平米</span>
+									</div>
+									<label class="formlabel">结构：</label>
+									<div class="control-self">
+										<div class="select select2 is-fullwidth select-self" style="width:76px;">
+											<select>
+												<option>框架</option>
+											</select>
+										</div>
+									</div>
+									<label class="formlabel">物管费：</label>
+									<div class="control-self">
+										<input type="text" class="input input-60" value="" style="width:80px;" />
+										<span class="formspan">元/平米/天</span>
+									</div>
+								</div>
+								<div class="form-row">
+									<label class="formlabel">总户数：</label>
+									<div class="control-self">
+										<input type="text" class="input input-60" value="" style="width:80px;" />
+										<span class="formspan">户</span>
+									</div>
+									<label class="formlabel" style="margin-left:38px;">外墙：</label>
+									<div class="control-self">
+										<div class="select select2 is-fullwidth select-self" style="width:76px;">
+											<select>
+												<option>砖墙</option>
+											</select>
+										</div>
+									</div>
+									<label class="formlabel">电话：</label>
+									<div class="control-self">
+										<input type="text" class="input input-130" style="width:146px;" value="" />
+									</div>
+								</div>
+								<div class="form-row">
+									<label class="formlabel">周边环境：</label>
+									<div class="control-self" style="width:558px;margin-top:8px;">
+										<textarea class="textarea"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="right-tile">
+								<div class="up-area">
+									<div class="upload-button upload-button2"><input type="file" value="" class="upload-file upload-file2"></div>
+									<div class="img-border">
+										<div class="img-row">
+											<div class="img-k"><img src="img/house.jpg" alt="" /></div>
+											<a class="button is-danger is-outlined is-small del-btn">删除</a>
+										</div>
+										<div class="img-row">
+											<div class="img-k"><img src="img/house.jpg" alt="" /></div>
+											<a class="button is-danger is-outlined is-small del-btn">删除</a>
+										</div>
+										<div class="img-row">
+											<div class="img-k">
+												<div class="img-progress">60%</div><img src="img/house.jpg" alt="" /></div>
+											<a class="button is-danger is-outlined is-small del-btn">取消</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+				<footer class="modal-card-foot">
+					<div class="btn-selfarea">
+						<a class="button is-outlined gg-button">确定</a>
+						<a class="button delete-modal gg-button">取消</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<!--房源详情-->
+		<div class="modal" id="look">
+			<div class="modal-background"></div>
+			<div class="modal-card">
+				<header class="modal-card-head">
+					<p class="modal-card-title">楼盘详情</p>
+				</header>
+				<section class="modal-card-body detail-body">
+					<!-- Content ... -->
+					<div class="tabs-content" style="padding:30px 20px;padding-bottom:20px;height:476px;" id="tabs-content">
+						<div class="tile is-ancestor my-tile" id="my-tile">
+							<div class="left-tile" style="width:72%;">
+								<div class="detail-row">所属区域：上海市&nbsp;&nbsp;普陀区&nbsp;&nbsp;长寿路板块</div>
+								<div class="columns detail-row">
+									<div class="column">楼盘名称：幸福家园</div>
+									<div class="column">物业用途：住宅</div>
+									<div class="column">拼音缩写：xingfujiayuan</div>
+								</div>
+								<div class="columns detail-row" style="margin-bottom:12px;">
+									<div class="column">物业类型：多层</div>
+									<div class="column">别名：哈哈哈</div>
+									<div class="column">建房/产权：1999/70年</div>
+								</div>
+								<div class="detail-row" style="margin-bottom:12px;">概要地址：上海市闵行区浦江镇50弄13号703室</div>
+								<div class="detail-row" style="margin-bottom:23px;">详细地址：上海市闵行区浦江镇50弄13号703室</div>
+								<div class="columns detail-row">
+									<div class="column">售均价：70000元/平米</div>
+									<div class="column">物业公司：上海幸福物业管理有限公司</div>
+								</div>
+								<div class="columns detail-row">
+									<div class="column">建筑面积：100平米</div>
+									<div class="column">结构：框架</div>
+									<div class="column">物管费：100元/平米/天</div>
+								</div>
+								<div class="columns detail-row" style="margin-bottom:12px;">
+									<div class="column">总户数：22户</div>
+									<div class="column">外墙：砖墙</div>
+									<div class="column">电话：65843333</div>
+								</div>
+								<div class="detail-row">周围环境：非常非常好，小区附近有学校，菜市场，有地铁站，小区内部有游泳池、足球场、篮球场</div>
+							</div>
+							<div class="right-tile" style="width:27%;padding-left:20px;">
+								<div class="up-area">
+									<!--<div class="wsc"></div>-->
+
+									<div class="img-show">
+										<img src="img/house.jpg" alt="" class="house-show" />
+										<img src="img/house.jpg" alt="" class="house-show" />
+										<img src="img/house.jpg" alt="" class="house-show" />
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<footer class="modal-card-foot">
+					<div class="btn-selfarea">
+						<a class="button delete-modal is-outlined gg-button">关闭</a>
+						<a class="button gg-button">修改</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<!--删除房源弹框-->
+		<div class="modal tsAlert" id="deleteAlert">
+			<div class="modal-background"></div>
+			<div class="modal-card">
+				<header class="modal-card-head modal-card-head2">
+					<p class="modal-card-title">提示</p>
+				</header>
+				<section class="modal-card-body">
+					<p class="ts-title">您确定删除此楼盘吗？</p>
+				</section>
+				<footer class="modal-card-foot">
+					<div class="btn-selfarea">
+						<a class="button is-outlined gg-button">保存</a>
+						<a class="button delete-modal gg-button">取消</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<!--上传中确定提示-->
+		<div class="modal tsAlert">
+			<div class="modal-background"></div>
+			<div class="modal-card">
+				<header class="modal-card-head modal-card-head2">
+					<p class="modal-card-title">提示</p>
+				</header>
+				<section class="modal-card-body">
+					<p class="ts-title">照片正在上传，现在操作将无法保存！</p>
+				</section>
+				<footer class="modal-card-foot">
+					<div class="btn-selfarea">
+						<a class="button is-outlined gg-button">继续上传</a>
+						<a class="button delete-modal gg-button">取消</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<!--上传中取消提示-->
+		<div class="modal tsAlert">
+			<div class="modal-background"></div>
+			<div class="modal-card">
+				<header class="modal-card-head modal-card-head2">
+					<p class="modal-card-title">提示</p>
+				</header>
+				<section class="modal-card-body">
+					<p class="ts-title">是否取消上传该照片？</p>
+				</section>
+				<footer class="modal-card-foot">
+					<div class="btn-selfarea">
+						<a class="button is-outlined gg-button">是</a>
+						<a class="button delete-modal gg-button">否</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<!--楼盘名称重复提示-->
+		<div class="modal tsAlert">
+			<div class="modal-background"></div>
+			<div class="modal-card">
+				<header class="modal-card-head modal-card-head2">
+					<p class="modal-card-title">提示</p>
+				</header>
+				<section class="modal-card-body">
+					<p class="ts-title">该楼盘名已存在！</p>
+				</section>
+				<footer class="modal-card-foot">
+					<div class="btn-selfarea">
+						<a class="button is-outlined gg-button gg2-button">确定</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<!--新增楼盘必填提示-->
+		<div class="modal tsAlert">
+			<div class="modal-background"></div>
+			<div class="modal-card">
+				<header class="modal-card-head modal-card-head2">
+					<p class="modal-card-title">提示</p>
+				</header>
+				<section class="modal-card-body">
+					<p class="ts-title">请填写概要地址！</p>
+				</section>
+				<footer class="modal-card-foot">
+					<div class="btn-selfarea">
+						<a class="button is-outlined gg-button gg2-button">确定</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<!--上传中确定提示-->
+		<div class="modal tsAlert">
+			<div class="modal-background"></div>
+			<div class="modal-card">
+				<header class="modal-card-head modal-card-head2">
+					<p class="modal-card-title">提示</p>
+				</header>
+				<section class="modal-card-body">
+					<p class="ts-title">照片正在上传，现在操作将无法保存！</p>
+				</section>
+				<footer class="modal-card-foot">
+					<div class="btn-selfarea">
+						<a class="button is-outlined gg-button">继续上传</a>
+						<a class="button delete-modal gg-button">停止并保存</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/jquery-2.2.0.min.js"></script>
+	<script src="js/bulma.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script>
+		$(function() {
+			//alert($(window).height());
+			$(".delete-modal,.delete").click(function() {
+				$(".modal-background").trigger("click");
+			});
+			$(".choose-btn").click(function() {
+				if($(this).hasClass("choose-active")) {
+					$(this).removeClass("choose-active");
+				} else {
+					$(this).addClass("choose-active");
+				}
+			});
+
+			//房源图片轮播示例
+			var $box = $("#run");
+			var $li = $box.find(".img-house");
+			var li_len = $li.length;
+			var boxWidth = li_len * 186 * 2;
+			$box.css("width", boxWidth + "px");
+			$li.clone().appendTo($box);
+			var timer = null;
+			var now = 0;
+
+			function setTimer() {
+				timer = setTimeout(function() {
+					setScroll("next");
+				}, 4000);
+			}
+
+			function setScroll(type) {
+				if(!$box.is(":animated")) {
+					clearTimeout(timer);
+					if(type == "next") {
+						now = now + 1;
+						var scrollMove = -186 * now;
+						$box.animate({
+							left: scrollMove + "px"
+						}, 600, function() {
+							if(now == li_len) {
+								$box.css("left", "0px");
+								now = 0;
+							}
+						});
+					} else if(type == "prev") {
+						if(now == 0) {
+							now = li_len;
+							$box.css("left", -(li_len * 186));
+						}
+						now = now - 1;
+						var scrollMove = -186 * now;
+						$box.animate({
+							left: scrollMove + "px"
+						}, 600, function() {
+							if(now == li_len) {
+								$box.css("left", "0px");
+								now = li_len;
+							}
+						});
+					}
+					setTimer();
+				}
+			}
+
+			$(".next").click(function() {
+				setScroll("next");
+			});
+			$(".prev").click(function() {
+				//      alert($(".img-run").width());
+
+				setScroll("prev");
+			});
+			$(".img-pos").hover(function() {
+				clearTimeout(timer);
+			}, function() {
+				setTimer();
+			});
+			setTimer();
+		});
+	</script>
+
+</html>

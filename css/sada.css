@@ -1,0 +1,18 @@
+.app-main {
+    margin-left: 220px;
+}
+.table-self1{
+	    font-size: 14px;
+    color: #333;
+    margin-bottom: 0px
+}
+.table-self1 thead{
+	background-color: #CCC
+}
+.table-self1 td, .table-self1 th {
+    text-align: center;
+    vertical-align: middle;
+}
+.columns{
+	margin-top: 50px;
+}
